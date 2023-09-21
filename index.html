@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Gerador de senhas, pass generator"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Gerador de Senhas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <img class="logo" src="assets/logo.png" alt="Gerador de senha"/>
+
+    <main class="container-input">
+        <span>Tamanho <span id="valor">15</span> </span>
+        <input type="range" class="slider" id="slider" min="5" max="25" value="15">
+        <button class="button-cta" id="button">Gerar senha</button>
+    </main>
+
+    <div class="container-password hide" id="container-password">
+        <span class="tittle">Senha:</span>
+        <span class="passwordGenerated" id="password"></span>
+        <span class="tooltip">Clique na senha para copiar 👆</span>
+    </div>
+
+</body>
+    <script src="script.js"></script>
+</html>

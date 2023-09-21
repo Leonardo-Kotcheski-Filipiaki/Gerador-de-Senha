@@ -1,0 +1,226 @@
+* {
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: white;
+   
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.logo {
+    width: 800px;
+}
+
+.container-input {
+    width: 700px;
+    margin: 14px 0;
+}
+
+.container-input span {
+    color: white;
+    font-size: 22px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    height: 18px;
+    outline: none;
+    margin-top: 18px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: solid white 1px;
+    background: #000000;
+    cursor: pointer;
+}
+
+.button-cta {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    background-color: rgb(50, 225, 60);
+    border: solid 2px white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: transform 0.5;
+}
+
+.button-cta:hover {
+    transform: scale(0.99);
+}
+
+.container-password {
+    width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tittle {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.passwordGenerated {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border: dashed 2px rgb(168, 166, 166);
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.5;
+}
+
+.passwordGenerated:hover {
+    transform: scale(0.99);
+}
+
+.tooltip {
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    border: solid 2px rgb(168, 166, 166);
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.container-password:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 1440px) {
+    .logo {
+        width: 1000px;
+        margin-top: 40px;
+    }
+
+    .container-input {
+        width: 800px;
+        height: 40px;
+        margin-top: 50px;
+    }
+    
+    .button-cta{
+        font-size: 24px;
+        height: 70px;
+    }
+
+    .container-password{
+        width: 600px;
+        height: 600px;
+        margin-top: 180px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px ) and (max-width: 1439px){
+    .logo {
+        width: 700px;
+        margin-top: 40px;
+    }
+
+    .container-input {
+        width: 500px;
+        margin-top: 50px;
+    }
+    
+    .button-cta{
+        font-size: 24px;
+        height: 70px;
+    }
+
+    .container-password{
+        width: 600px;
+        height: 600px;
+        margin-top: 150px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .logo {
+        margin-top: 40px;
+        width: 600px;
+    }
+
+    .container-input {
+        width: 320px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .logo {
+        margin-top: 20px;
+        width: 400px;
+    }
+
+    .container-input {
+        width: 230px;
+        margin-top: 30px;
+    }
+
+    .container-password{
+        width: 325px;
+        margin-top: 120px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .logo {
+        margin-top: 30px;
+        width: 300px;
+    }
+
+    .container-input {
+        width: 190px;
+        margin-top: 30px;
+    }
+
+    .button-cta{
+        width: 190px;
+    }
+
+    .container-password{
+        font-size: 15px;
+        width: 290px;
+        margin-top: 120px;
+    }
+}
