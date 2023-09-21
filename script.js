@@ -28,7 +28,11 @@ $(document).ready(function () {
     })
 
     $(password).click(function () {
-        navigator.clipboard.writeText($(password).val());
+        const $tempInput = $("<input>");
+        $("body").append($tempInput);
+        $tempInput.val(pass).select();
+        document.execCommand("copy");
+        $tempInput.remove();
     })
 
 })
