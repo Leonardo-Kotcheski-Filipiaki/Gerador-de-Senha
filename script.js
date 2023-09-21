@@ -35,4 +35,20 @@ $(document).ready(function () {
         $tempInput.remove();
     })
 
+    
+    let clipboard = new ClipboardJS(btn[0], {
+        text: function(trigger) {
+            return generatePass();
+        }
+    });
+
+    clipboard.on('success', function(e) {
+        alert("Senha copiada para a área de transferência");
+        e.clearSelection();
+    });
+
+    clipboard.on('error', function(e) {
+        console.error('Erro ao copiar a senha', e);
+    });
+
 })
